@@ -1,0 +1,43 @@
+.footer {
+  padding-top: 5rem;
+  background: black;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  gap: 5rem 100px;
+  align-items: center;
+}
+
+.footer-container::before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 100px;
+  background: #ccf235;
+  position: absolute;
+  top: -5rem;
+}
+
+.footer-container p {
+  font-size: 1.5rem;
+  color: #cccccc;
+}
+
+.contato-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-links p {
+  color: var(--white);
+  font-weight: bold;
+}
+
+#end-contato {
+  font-size: var(--small-text);
+  padding-bottom: 4rem;
+}

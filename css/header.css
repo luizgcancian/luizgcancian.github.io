@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5rem;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.header img {
+  width: 200px;
+}
+
+.menu {
+  font-size: 1.3rem;
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+}
+
+.header a {
+  border-bottom: 1px solid transparent;
+}
+
+.header a:hover {
+  border-bottom: 2px solid red;
+  animation: show 0.5s forwards;
+}
