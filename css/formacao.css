@@ -90,3 +90,33 @@
 .cl-escola {
   color: #a3a3a3;
 }
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .formacao-texto {
+    color: #ffffff;
+    text-transform: capitalize;
+    max-width: initial;
+    font-size: 3rem;
+  }
+  .formacao-descricao {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .empresa {
+    gap: 10px 20px;
+  }
+  .education {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .escola {
+    gap: 20px;
+  }
+}

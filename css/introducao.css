@@ -3,11 +3,11 @@
   grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 100px;
+  margin-top: 5rem;
 }
 
 .introducao img {
   max-width: 100%;
-  margin-top: 5rem;
 }
 
 .introducao h1 {
@@ -32,4 +32,37 @@
 .introducao p {
   font-size: 1.5rem;
   color: var(--gray-text);
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 2.5rem;
+  }
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+  .introducao h1::before {
+    top: -20px;
+    height: 70px;
+  }
+  .introducao p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
 }

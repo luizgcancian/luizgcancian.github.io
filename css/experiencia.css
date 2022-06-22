@@ -24,7 +24,7 @@
   position: relative;
 }
 
-.empresa h3::before {
+.empresa-name::before {
   content: "";
   display: block;
   width: 10px;
@@ -52,4 +52,36 @@
   background-color: var(--white);
   border-radius: 5px;
   padding: 5px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    gap: 40px;
+  }
+  .experiencia h2 {
+    color: #141414;
+    text-transform: capitalize;
+    max-width: initial;
+    font-size: 3rem;
+  }
+  .experiencia-texto {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .empresa {
+    gap: 10px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+  .experiencia {
+    gap: 40px;
+  }
 }

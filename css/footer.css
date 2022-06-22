@@ -41,3 +41,26 @@
   font-size: var(--small-text);
   padding-bottom: 4rem;
 }
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  #end-contato {
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-container p {
+    font-size: 1.3rem;
+  }
+
+  #end-contato {
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+}
