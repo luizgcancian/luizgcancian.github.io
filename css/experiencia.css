@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 2fr;
   margin-top: 5rem;
   gap: 100px;
+  padding-bottom: 5rem;
 }
 
 .experiencia strong {

@@ -1,0 +1,132 @@
+.portifolio-container {
+  background: #292929;
+  color: #ffffff;
+  padding-bottom: 5rem;
+}
+
+.portifolio {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.projetos p {
+  color: #f0f0f0;
+}
+
+dt {
+  font-size: 1.17rem;
+  font-weight: bold;
+  background: #0c0c0c;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.open-icon {
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+dl {
+  position: relative;
+}
+
+dt::after {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 7px;
+  background: linear-gradient(#dbc71a, #d8d08c);
+  position: absolute;
+  left: -7px;
+  top: 15px;
+}
+
+dt::before {
+  content: "+";
+  display: block;
+  font-size: 1.2rem;
+  padding: 2px 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  text-align: center;
+  background-color: #ffffff;
+  color: black;
+  font-weight: bold;
+}
+
+dt.active::before {
+  content: "-";
+  display: block;
+  font-size: 1.2rem;
+  padding: 2px 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  text-align: center;
+  background-color: #ffffff;
+  color: black;
+  font-weight: bold;
+}
+
+dt span {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+dd {
+  padding: 20px 15px;
+  background: #252525;
+  margin: 0;
+  box-shadow: inset 0 -1px #373737;
+  display: none;
+}
+
+dd.active {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px, 0px);
+  }
+}
+
+@media (max-width: 870px) {
+  .portifolio {
+    grid-template-columns: 1fr;
+  }
+  .portifolio h2 {
+    max-width: initial;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .projetos p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  dt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
